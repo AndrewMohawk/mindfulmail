@@ -5,6 +5,7 @@ go 1.17
 require (
 	github.com/emersion/go-smtp v0.16.0
 	github.com/jhillyerd/enmime v0.11.0
+	github.com/sashabaranov/go-openai v1.5.0
 )
 
 require (
@@ -17,8 +18,7 @@ require (
 	github.com/olekukonko/tablewriter v0.0.5 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/rivo/uniseg v0.2.0 // indirect
-	github.com/sashabaranov/go-openai v1.5.0 // indirect
 	github.com/ssor/bom v0.0.0-20170718123548-6386211fdfcf // indirect
-	golang.org/x/net v0.0.0-20220722155237-a158d28d115b // indirect
-	golang.org/x/text v0.3.8 // indirect
+	golang.org/x/net v0.7.0 // indirect
+	golang.org/x/text v0.7.0 // indirect
 )
