@@ -1,10 +1,11 @@
-module main
+module mindfulmail-smtpd
 
 go 1.17
 
 require (
 	github.com/emersion/go-smtp v0.16.0
 	github.com/jhillyerd/enmime v0.11.0
+	github.com/mattn/go-sqlite3 v1.14.16
 	github.com/sashabaranov/go-openai v1.5.0
 )
 

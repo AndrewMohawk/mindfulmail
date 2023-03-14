@@ -1,0 +1,17 @@
+[Unit]
+Description=MindfulMail SMTPd Service
+ConditionPathExists=/home/mindfulmail/mindfulmail-smtpd
+After=network.target
+[Service]
+Type=simple
+User=root
+Group=root
+WorkingDirectory=/home/mindfulmail/
+ExecStart=mindfulmail-smtpd
+Restart=on-failure
+RestartSec=10
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=mindfulmail-smtpd
+[Install]
+WantedBy=multi-user.target

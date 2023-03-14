@@ -1,0 +1,17 @@
+[Unit]
+Description=MindfulMail Frontend Service
+ConditionPathExists=/home/mindfulmail/frontend/mindfulmail-frontend
+After=network.target
+[Service]
+Type=simple
+User=root
+Group=root
+WorkingDirectory=/home/mindfulmail/frontend
+ExecStart=mindfulmail-frontend
+Restart=on-failure
+RestartSec=10
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=mindfulmail-frontend
+[Install]
+WantedBy=multi-user.target

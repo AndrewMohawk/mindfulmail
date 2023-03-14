@@ -1,0 +1,32 @@
+<!-- templates/index.html -->
+<!doctype html>
+<html>
+<head>
+    <title>Google SignIn</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> <!-- load bulma css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- load fontawesome -->
+    <style>
+        body        { padding-top:70px; }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <div class="jumbotron text-center">
+        <h1><span class="fa fa-lock  text-success"></span> Mindful Mail</h1>
+        <div class="text-left text-normal">
+            <p>MindfulMail is a simple service that will use OpenAI to remove harassing, traumatic and offensive language from emails and return a summary for you. It doesnt store any emails and is simple to use. <br/><br/>To use this first Sign in with Google below (just once) and after that you can simply send an email to help@mindfulmail.net or create a rule in your email client to forward mail you need to be summarised and MindfulMail will do the rest. You may need to check your spam filter for mail coming back from help@mindfulmail.net.
+            <br/><br/>If you have any questions or concerns please contact <a href="https://twitter.com/AndrewMohawk">@AndrewMohawk</a> or <a href="mailto:mindfulmail@andrewmohawk.com">mindfulmail@andrewmohawk.com</a> :) 
+
+            </p>
+        </div>
+        
+        
+        
+        <a href="/auth/google" class="btn btn-danger"><span class="fa fa-google"></span> Sign In with Google</a>
+        <p class="text-success"><br/>The reason we need to do this is because spammers already have been sending mail to this address and costing valid API calls. If you want to use a different mail provider send me an email and I will add you! </p>
+        
+    </div>
+</div>
+</body>
+</html> 
