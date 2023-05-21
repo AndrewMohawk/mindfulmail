@@ -89,7 +89,7 @@ func sendEmail(to, subject, body, from string) error {
 
 // function to summarise the text with OpenAI
 func summariseText(text string) string {
-	client := openai.NewClient("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")
+	client := openai.NewClient("REPLACE_THIS_WITH_YOUR_API_KEY")
 	tokenPrefix := "This is a service to help people avoid harmful content in emails. Emails are sent to this service and you are here to help people remove the harmful and offensive content and give a summary of the email. Please summarise the email below:"
 	resp, err := client.CreateChatCompletion(
 		context.Background(),
